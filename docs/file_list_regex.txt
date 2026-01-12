@@ -1,0 +1,9 @@
+PAI Library file split regex.
+
+This splits the files in \\pai_server\Public\Library into 5 parts
+
+Search regex:
+^([0-9A-Za-z&]+)-([0-9A-Za-z&]+)-([0-9A-Za-z&]+)-([0-9A-Za-z&]+)
+
+Replace regex:
+\1\t\t\2\t\t\3\t\t\4\t\t

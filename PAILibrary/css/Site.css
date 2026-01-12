@@ -1,0 +1,408 @@
+﻿/*----------------------------------------------------------
+The base color for this template is #5c87b2. If you'd like
+to use a different color start by replacing all instances of
+#5c87b2 with your new color.
+
+Colors used:
+#000000
+#5c87b2
+#696969
+#cccccc
+#e8eef4
+#ffffff
+----------------------------------------------------------*/
+body
+{
+	background-color: #5c87b2;
+	font-size: 12px;
+	font-family: Verdana, Helvetica, Sans-Serif;
+	margin: 0;
+	padding: 0;
+	color: #696969;
+}
+a:link
+{
+	color: #696969;
+	text-decoration: underline;
+}
+a:visited
+{
+	color: #696969;
+}
+a:hover, a:active
+{
+	color: #1d60ff;
+}
+img.documentLink
+{
+	vertical-align: middle;
+	width: auto;
+	padding: 0px;
+	margin: 0px;
+}
+p, ul
+{
+	margin-bottom: 10px;
+	line-height: 1.6em;
+}
+
+/* HEADINGS   
+----------------------------------------------------------*/
+h1, h2, h3
+{
+	color: #000;
+	font-family: Arial, Helvetica, sans-serif;
+}
+h1
+{
+	font-size: 16px;
+	padding-bottom: 0px;
+	margin-bottom: 0px;
+}
+h2
+{
+	font-size: 14px;
+	padding: 0px 0px 5px 0px;
+}
+h3
+{
+	font-size: 14px;
+}
+
+/* PRIMARY LAYOUT ELEMENTS   
+----------------------------------------------------------*/
+
+/* you can specify a greater or lesser percentage for the 
+page width. Or, you can specify an exact pixel width. */
+.page
+{
+	width: 95%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#header
+{
+	/* position: relative; */
+	margin-bottom: 0px;
+	color: #000;
+	padding: 0px;
+}
+
+#header h1
+{
+	font-weight: bold;
+	padding: 5px 0px;
+	margin: 0px;
+	color: #ffffff;
+	border: none;
+	/* line-height: 2em; */
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 32px !important;
+}
+
+#main
+{
+	padding: 10px 10px 10px 10px;
+	background-color: #fff;
+	margin-bottom: 10px;
+	_height: 1px; /* only IE6 applies CSS properties starting with an underscore */
+}
+
+#footer, #footersql
+{
+	color: #000097;
+	padding: 2px 5px 5px 5px;
+	text-align: left;
+	line-height: normal;
+	margin: 0;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+/* TAB MENU   
+----------------------------------------------------------*/
+#menucontainer
+{
+	margin: 10px 0px 0px 0px;
+	padding-bottom: 0px;
+	padding-right: 0px;
+}
+ul#menu
+{
+	border-bottom: 1px #5C87B2 solid;
+	padding: 2px 2px 0px 0px;
+	/* position: relative; */
+	margin: 0px;
+	text-align: right;
+}
+ul#menu li
+{
+	display: inline;
+	list-style: none;
+}
+ul#menu li img {
+	vertical-align: middle;
+	padding-right: 5px;
+	border: 0px;
+}
+ul#menu li a
+{
+	padding: 10px 15px;
+	font-weight: bold;
+	text-decoration: none;
+	line-height: 36px;
+	background-color: rgb(225, 225, 225);
+	color: #4d4d4d;
+	border: solid 1px #CCCCCC;
+}
+ul#menu li a#active
+{
+	color: #000000;
+	background-color: #ffffff;
+	border: solid 1px #CCCCCC;
+	text-decoration: underline;
+}
+ul#menu li a#active:hover
+{
+	text-decoration: underline;
+}
+ul#menu li a:hover
+{
+	background-color: #ffffff;
+	color: #000000;
+	text-decoration: underline;
+}
+
+ul#menu li.selected a
+{
+	background-color: #fff;
+	color: #000;
+}
+
+
+/* FORM LAYOUT ELEMENTS   
+----------------------------------------------------------*/
+
+form
+{
+	margin: 0px;
+	padding: 0px;
+}
+
+fieldset 
+{
+	/*margin: 0px;
+	padding: 5px;*/
+	border: 1px solid #cccccc;
+}
+
+legend 
+{
+	font-size: 12px;
+	font-weight: 600;
+	/*padding: 5px;
+	margin: 0px;*/
+}
+.smallInput
+{
+	width: 50px;
+}
+input.smallbox
+{
+	width: 50px;
+	border: 1px solid #CCC;
+}
+input.mediumbox
+{
+	width: 100px;
+	border: 1px solid #CCC;
+}
+input.largebox
+{
+	width: 150px;
+	border: 1px solid #CCC;
+}
+input.very-largebox
+{
+	width: 250px;
+	border: 1px solid #CCC;
+}
+input.button
+{
+	font-size: 12px;
+	font-weight: 600;
+	background-color: #e8eef4;
+	color: #696969;
+	border: 1px solid #CCC;
+	margin-top: 10px;
+}
+input[type="file"]
+{
+	font-size: 12px;
+	font-weight: 600;
+	background-color: #e8eef4 !important;
+	color: #696969;
+	border: 1px solid #CCC;
+	margin-top: 10px;
+	width: 90%;
+}
+
+/* TABLE
+----------------------------------------------------------*/
+table
+{
+	border: solid 1px #e8eef4;
+	border-collapse: collapse;
+}
+
+table td 
+{
+	padding: 5px;   
+	border: solid 1px #e8eef4;
+}
+
+table th
+{
+	padding: 6px 5px;
+	text-align: left;
+	background-color: #e8eef4; 
+	border: solid 1px #e8eef4;   
+}
+
+/* MISC  
+----------------------------------------------------------*/
+.clear
+{
+	clear: both;
+}
+
+.error
+{
+	color:Red;
+}
+
+a#lblCode
+{
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+div#results
+{
+	margin-top: 5px;
+	margin-bottom: 10px;
+}
+
+/* Styles for validation helpers
+-----------------------------------------------------------*/
+.field-validation-error
+{
+	color: #ff0000;
+}
+
+.field-validation-valid
+{
+	display: none;
+}
+
+.menuLink
+{
+	color: #696969;
+	background-color: #ffffff;
+	border: solid 1px #cccccc;
+	padding: 5px;
+	margin: 5px;
+	vertical-align: middle;
+	line-height: 25px;
+	font-weight: bold;
+}
+.menuLink:hover
+{
+	color: #ffffff;
+	background-color: #5c87b2;
+	font-weight: bold;
+}
+
+.input-validation-error
+{
+	border: 1px solid #ff0000;
+	background-color: #ffeeee;
+}
+
+.validation-summary-errors
+{
+	font-weight: bold;
+	color: #ff0000;
+}
+
+.validation-summary-valid
+{
+	display: none;
+}
+
+/* Styles for editor and display helpers
+----------------------------------------------------------*/
+.display-label,
+.editor-label,
+.display-field,
+.editor-field
+{
+	margin: 5px;
+	padding: 0px;
+}
+
+.text-box
+{
+	width: 30em;
+}
+
+.text-box.multi-line
+{
+	height: 6.5em;
+}
+
+.tri-state
+{
+	width: 6em;
+}
+.datebox
+{
+	background: url('../images/calendar-20x20.png') no-repeat left center;
+	padding-left: 20px;
+}
+.dateMed
+{
+	width: 100px !important;
+}
+.header { 
+	cursor: pointer;
+	background-image: url(../images/bg.png);
+	background-repeat: no-repeat;
+	background-position: right;
+}
+.header:hover
+{
+	color: #e8eef4;
+	background-color: #696969;
+}
+.headerSortUp { 
+	background-image: url(../images/asc.png);
+	background-repeat: no-repeat;
+	background-position: right;
+}
+.headerSortUp:hover
+{
+	color: #e8eef4;
+	background-color: #696969;
+}
+.headerSortDown { 
+	background-image: url(../images/desc.png);
+	background-repeat: no-repeat;
+	background-position: right;
+}
+.headerSortDown:hover
+{
+	color: #e8eef4;
+	background-color: #696969;
+}

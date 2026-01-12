@@ -1,0 +1,73 @@
+using System;
+using System.Collections.Generic;
+using System.Data;
+using System.Data.SqlClient;
+using System.IO;
+using System.Net;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+
+namespace PAILibrary
+{
+	public partial class ViewFile : System.Web.UI.Page
+	{
+		protected void Page_Load( object sender, EventArgs e )
+		{
+			SqlConnection con = null;
+			SqlCommand cmd = null;
+			DataSet ds = new DataSet();
+			string docid = Request.QueryString["docid"];
+			string path = Helpers.LibPath;
+			string file = string.Empty;
+			
+			try
+			{
+				con = new SqlConnection( Helpers.GetSQLConString() );
+				con.Open();
+				
+				cmd = new SqlCommand();
+				cmd.Connection = con;
+				cmd.CommandTimeout = 0;
+				cmd.CommandType = CommandType.StoredProcedure;
+				cmd.CommandText = "usp_DL_GetFilename";
+				cmd.Parameters.AddWithValue( "@DocID", docid );
+				using ( SqlDataReader dr = cmd.ExecuteReader() )
+				{
+					if ( dr.HasRows )
+					{
+						dr.Read();
+						file = dr["FileName"].ToString();
+					}
+					else
+					{
+						return;
+					}
+				}
+				
+				// see if the file exists on the server
+				FileInfo info = new System.IO.FileInfo( Path.Combine( path, file ) );  
+				
+				Response.Clear();
+				Response.AddHeader( "Content-Disposition", "attachment; filename=\"" + info.Name + "\"" );
+				Response.AddHeader( "Content-Length", info.Length.ToString() );
+				Response.ContentType = "application/octet-stream";
+				//Response.ContentType = MIMEAssistant.GetMIMEType( info.FullName );
+				
+				// write file to browser
+				Response.WriteFile( info.FullName );
+				//Response.End();
+				HttpContext.Current.ApplicationInstance.CompleteRequest();
+			}
+			catch (Exception ex)
+			{
+				File.AppendAllText( Path.Combine( Path.GetTempPath(), "pailib.log" ), ex.Message + Environment.NewLine );
+			}
+			finally
+			{
+				if ( con != null && con.State == ConnectionState.Open )
+					con.Close();
+			}
+		}
+	}
+}

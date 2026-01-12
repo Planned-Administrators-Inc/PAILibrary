@@ -1,0 +1,64 @@
+<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="LibraryPublish.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="sProc" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">usp_DL_Get063DocsForPublish_WithDate</Value>
+    </Setting>
+    <Setting Name="rptAdded" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">usp_DL_RPT_TodaysDocs_ByDate</Value>
+    </Setting>
+    <Setting Name="rptMissed" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">usp_DL_RPT_MissedDocs</Value>
+    </Setting>
+    <Setting Name="rptPub" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">usp_DL_RPT_Published_ByDate</Value>
+    </Setting>
+    <Setting Name="rptNameAdded" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Plandocs-{0}-Changes.xls</Value>
+    </Setting>
+    <Setting Name="rptNameMissed" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Plandocs-{0}-Missed.xls</Value>
+    </Setting>
+    <Setting Name="rptNamePub" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Plandocs-{0}-Published.xls</Value>
+    </Setting>
+    <Setting Name="sProcCount" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">usp_DL_Get063DocsForPublish_WithDate_Count</Value>
+    </Setting>
+    <Setting Name="sProcForXLSX" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">usp_DL_Get063DocsForPublish_WithDateForXLSX</Value>
+    </Setting>
+    <Setting Name="sProcCountForXLSX" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">usp_DL_Get063DocsForPublish_WithDate_CountForXLSX</Value>
+    </Setting>
+    <Setting Name="conDBServer1" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Server=DBServer1;Database=PAILibraryCI;User ID=PAILibUser;Password=Lu$443!;Persist Security Info=True;Async=true;
+        Application Name=PAILIB_PUB</Value>
+    </Setting>
+    <Setting Name="DevEmail" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">schedjob@paisc.com;</Value>
+    </Setting>
+    <Setting Name="rptPath" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">D:\LB\LibraryReports\</Value>
+    </Setting>
+    <Setting Name="logPath" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">D:\LB\LibraryReports\LibraryLogs\pailib_pub-{0}.log</Value>
+    </Setting>
+    <Setting Name="pubPath" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">D:\LB\LibraryReports\LibraryPublish\</Value>
+    </Setting>
+    <Setting Name="libPath" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">D:\LB\library\</Value>
+    </Setting>
+    <Setting Name="errLogPath" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">D:\LB\LibraryReports\LibraryLogs\pailib_pub-{0}_err.log</Value>
+    </Setting>
+    <Setting Name="pubPathHealthX" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">D:\LB\LibraryReports\LibraryPublishHealthX\</Value>
+    </Setting>
+    <Setting Name="pubPathQBL" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">D:\LB\LibraryReports\LibraryPublishQBL\</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

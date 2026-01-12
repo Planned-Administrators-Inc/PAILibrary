@@ -1,0 +1,65 @@
+Code	DocType
+001	Ad
+002	Agenda
+003	Agent Appointment paperwork (Single Case agreement, W-9, applications)
+004	Approval/sign off
+005	Benefit Enrollment Guide
+006	Binder (Combined materials)
+007	Booklet
+008	Brochure
+009	Bulletin
+010	Census
+011	Certificate of Coverage Notice
+012	Claim Form
+013	COBRA document
+014	Contract or Legal Agreement
+015	Client Info/Sold Case Document
+016	Description/Raw Content
+017	Email
+018	Employer Application
+019	Enrollment form
+020	Exhibit (Graph, Table or Chart)
+021	Flow Chart
+022	Flyer or Handout
+023	Glossary or definitions
+024	Guide or Handbook
+025	Hot Topic
+026	ID card
+027	Image (Artwork or Logo)
+028	Instructions
+029	Leave-behind sales materials
+030	Letter
+031	Manual
+032	Marketing Plan
+033	Meeting Notes
+034	Misc. Marketing Material
+035	Newsletter
+036	Organizational Chart
+037	Other Required Notice
+038	Plan Doc, SPD or Certificate
+039	Policy
+040	Postcard
+041	Poster
+042	Powerpoint Presentation
+043	Prescription Drug List
+044	Press Release
+045	Proposal
+046	Procedures
+047	Report
+048	Regulation
+049	RFP (include all census, attachments, exhibits, etc.)
+050	Spreadsheet or Tracking Log
+051	State Availability Chart
+052	Strategic Plan
+053	Survey
+054	Timeline
+055	Underwriting Guidelines
+056	Waiver notice
+057	Welcome Kit (Combined materials)
+059	Plan Designs
+060	SBC
+061	Payment Form
+062	Termination Form
+063	Old Verifax Forms
+064	Articles
+065	Authorization Form
