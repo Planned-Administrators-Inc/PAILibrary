@@ -37,28 +37,28 @@
         Application Name=PAILIB_PUB</Value>
     </Setting>
     <Setting Name="DevEmail" Type="System.String" Scope="Application">
-      <Value Profile="(Default)">schedjob@paisc.com;bcoleman@paisc.com;cdayanand@paisc.com</Value>
+      <Value Profile="(Default)">schedjob@paisc.com;</Value>
     </Setting>
     <Setting Name="rptPath" Type="System.String" Scope="Application">
-      <Value Profile="(Default)">\\pai_server\Public\LibraryReports\</Value>
+      <Value Profile="(Default)">D:\LB\LibraryReports\</Value>
     </Setting>
     <Setting Name="logPath" Type="System.String" Scope="Application">
-      <Value Profile="(Default)">\\pai_server\Public\LibraryReports\LibraryLogs\pailib_pub-{0}.log</Value>
+      <Value Profile="(Default)">D:\LB\LibraryReports\LibraryLogs\pailib_pub-{0}.log</Value>
     </Setting>
     <Setting Name="pubPath" Type="System.String" Scope="Application">
-      <Value Profile="(Default)">\\pai_server\Public\LibraryReports\LibraryPublish\</Value>
+      <Value Profile="(Default)">D:\LB\LibraryReports\LibraryPublish\</Value>
     </Setting>
     <Setting Name="libPath" Type="System.String" Scope="Application">
-      <Value Profile="(Default)">\\pai_server\Public\library\</Value>
+      <Value Profile="(Default)">D:\LB\library\</Value>
     </Setting>
     <Setting Name="errLogPath" Type="System.String" Scope="Application">
-      <Value Profile="(Default)">\\pai_server\Public\LibraryReports\LibraryLogs\pailib_pub-{0}_err.log</Value>
+      <Value Profile="(Default)">D:\LB\LibraryReports\LibraryLogs\pailib_pub-{0}_err.log</Value>
     </Setting>
     <Setting Name="pubPathHealthX" Type="System.String" Scope="Application">
-      <Value Profile="(Default)">\\pai_server\Public\LibraryReports\LibraryPublishHealthX\</Value>
+      <Value Profile="(Default)">D:\LB\LibraryReports\LibraryPublishHealthX\</Value>
     </Setting>
     <Setting Name="pubPathQBL" Type="System.String" Scope="Application">
-      <Value Profile="(Default)">\\pai_server\Public\LibraryReports\LibraryPublishQBL\</Value>
+      <Value Profile="(Default)">D:\LB\LibraryReports\LibraryPublishQBL\</Value>
     </Setting>
   </Settings>
 </SettingsFile>
