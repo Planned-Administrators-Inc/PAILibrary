@@ -134,6 +134,7 @@ namespace LibraryPublish
       catch (Exception ex)
         {
         bRet = false;
+        FrmMain.Log(string.Format("wDoc == NULL; rtf={0}, pdf={1}, format={2},error message={3}", rtf, pdf, WdExportFormat.wdExportFormatPDF, ex.Message.ToString()), true, true);
         LastError = ex.Message;
         }
       finally

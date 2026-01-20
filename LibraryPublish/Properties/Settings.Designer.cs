@@ -125,7 +125,7 @@ namespace LibraryPublish.Properties {
         
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("schedjob@paisc.com;")]
+        [global::System.Configuration.DefaultSettingValueAttribute("cdayanand@paisc.com")]
         public string DevEmail {
             get {
                 return ((string)(this["DevEmail"]));
@@ -134,7 +134,7 @@ namespace LibraryPublish.Properties {
         
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("D:\\LB\\LibraryReports\\")]
+        [global::System.Configuration.DefaultSettingValueAttribute("\\\\pai_server\\Public\\LibraryReports\\")]
         public string rptPath {
             get {
                 return ((string)(this["rptPath"]));
@@ -143,7 +143,7 @@ namespace LibraryPublish.Properties {
         
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("D:\\LB\\LibraryReports\\LibraryLogs\\pailib_pub-{0}.log")]
+        [global::System.Configuration.DefaultSettingValueAttribute("\\\\pai_server\\Public\\LibraryReports\\LibraryLogs\\pailib_pub-{0}.log")]
         public string logPath {
             get {
                 return ((string)(this["logPath"]));
@@ -152,7 +152,7 @@ namespace LibraryPublish.Properties {
         
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("D:\\LB\\LibraryReports\\LibraryPublish\\")]
+        [global::System.Configuration.DefaultSettingValueAttribute("\\\\pai_server\\Public\\LibraryReports\\LibraryPublish\\")]
         public string pubPath {
             get {
                 return ((string)(this["pubPath"]));
@@ -161,7 +161,7 @@ namespace LibraryPublish.Properties {
         
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("D:\\LB\\library\\")]
+        [global::System.Configuration.DefaultSettingValueAttribute("\\\\pai_server\\Public\\library\\")]
         public string libPath {
             get {
                 return ((string)(this["libPath"]));
@@ -170,7 +170,7 @@ namespace LibraryPublish.Properties {
         
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("D:\\LB\\LibraryReports\\LibraryLogs\\pailib_pub-{0}_err.log")]
+        [global::System.Configuration.DefaultSettingValueAttribute("\\\\pai_server\\Public\\LibraryReports\\LibraryLogs\\pailib_pub-{0}_err.log")]
         public string errLogPath {
             get {
                 return ((string)(this["errLogPath"]));
@@ -179,7 +179,7 @@ namespace LibraryPublish.Properties {
         
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("D:\\LB\\LibraryReports\\LibraryPublishHealthX\\")]
+        [global::System.Configuration.DefaultSettingValueAttribute("\\\\pai_server\\Public\\LibraryReports\\LibraryPublish\\HealthX\\")]
         public string pubPathHealthX {
             get {
                 return ((string)(this["pubPathHealthX"]));
@@ -188,7 +188,7 @@ namespace LibraryPublish.Properties {
         
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("D:\\LB\\LibraryReports\\LibraryPublishQBL\\")]
+        [global::System.Configuration.DefaultSettingValueAttribute("\\\\pai_server\\Public\\LibraryReports\\LibraryPublish\\QBL\\")]
         public string pubPathQBL {
             get {
                 return ((string)(this["pubPathQBL"]));

@@ -215,7 +215,7 @@ namespace LibraryPublish
         Message = DateTime.Now.ToString("MM/dd/yyyy HH:mm:ss") + " - " + msg + NL
         };
       email.Recipients.Add(Settings.Default.DevEmail);
-      email.Subject = "Error in PAILibrary Publish";
+      email.Subject = "IS Systems: Error in PAILibrary Publish";
       email.Send();
       }
 

@@ -22,7 +22,7 @@ namespace LibraryPublish
       SqlCommand cmd = null;
       SqlDataAdapter da = null;
       DataSet ds = null;
-      DataTable dt = null;
+      System.Data.DataTable dt = null;
       Excel.Application eXL = null;
       Excel.Workbook eWBook = null;
       Excel.Worksheet eSheet = null;
@@ -36,7 +36,8 @@ namespace LibraryPublish
       string sProc = string.Empty;
       string sSaveFile = string.Empty;
       bool bGood = true;
-
+      //var excelType = Type.GetTypeFromProgID("Excel.Application");
+      //Application eXL = (Application)Activator.CreateInstance(excelType);
       try
         {
         // get our date of report
@@ -46,6 +47,7 @@ namespace LibraryPublish
           }
 
         //Start Excel and get Application object.
+
         eXL = new Excel.Application()
           {
           DisplayAlerts = false

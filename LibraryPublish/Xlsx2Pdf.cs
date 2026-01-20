@@ -21,6 +21,8 @@ namespace LibraryPublish
       {
       bool bRet = true;
 
+      string fileName = string.Empty;
+      string pdfFileName = string.Empty;
       //Excel Spreadsheet - START
       // Microsoft.Office.Interop.Excel.Application excelApplication = new Microsoft.Office.Interop.Excel.Application();
       //Application excelApplication = new Application();
@@ -42,6 +44,8 @@ namespace LibraryPublish
           {
           foreach (string key in xlsxpdf.Keys)
             {
+            fileName = key;
+            pdfFileName = xlsxpdf[key];
             // open our source document
             // the first param is a ref to an object so stick our string in an object
             //object xlsx = key as object;
@@ -58,13 +62,15 @@ namespace LibraryPublish
             //  paramIncludeDocProps, paramIgnorePrintAreas, paramFromPage,
             //  paramToPage, paramOpenAfterPublish,
             //  paramMissing);
+            //var excelType = Type.GetTypeFromProgID("Excel.Application");
+            //Application excelApplication = (Application)Activator.CreateInstance(excelType);
             Application excelApplication = new Application();
-            Workbook excelWorkBook = excelApplication.Workbooks.Open(key, Type.Missing, false, Type.Missing, Type.Missing, Type.Missing, false, Type.Missing, Type.Missing, true, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing);
+            Workbook excelWorkBook = excelApplication.Workbooks.Open(fileName, Type.Missing, false, Type.Missing, Type.Missing, Type.Missing, false, Type.Missing, Type.Missing, true, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing);
 
             // Save it in the target format.
             if (excelWorkBook != null)
               {
-              excelWorkBook.ExportAsFixedFormat(XlFixedFormatType.xlTypePDF, xlsxpdf[key], XlFixedFormatQuality.xlQualityStandard, true, true, Type.Missing, Type.Missing, false, Type.Missing);
+              excelWorkBook.ExportAsFixedFormat(XlFixedFormatType.xlTypePDF, pdfFileName, XlFixedFormatQuality.xlQualityStandard, true, true, Type.Missing, Type.Missing, false, Type.Missing);
               excelWorkBook.RefreshAll();
               excelWorkBook.Close(false, Type.Missing, Type.Missing);
               excelWorkBook = null;
@@ -82,6 +88,7 @@ namespace LibraryPublish
       catch (Exception ex)
         {
         bRet = false;
+        FrmMain.Log(string.Format("wDoc == NULL; rtf={0}, pdf={1}, format={2},error message={3}", fileName, pdfFileName, XlFixedFormatType.xlTypePDF, ex.Message.ToString()), true, true);
         LastError = ex.Message;
         }
       finally
